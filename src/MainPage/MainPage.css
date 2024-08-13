@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+#about-me {
+  display: flex;
+  margin-top: 10vh;
+}
+
+#hero-text {
+  color: rgb(0, 19, 128);
+  font-family: "Ubuntu";
+  font-size: 2.5em;
+  font-weight: 500;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  margin-left: 10vw;
+}
+
+#my-picture {
+  border: 2px solid goldenrod;
+  width: 300px;
+  height: 300px;
+  margin-left: 10vw;
+  border-radius: 50%;
+}
+
+#socials {
+  display: flex;
+}
+
+.socials-icons {
+  padding-left: 10%;
+  margin-top: 7vh;
+}
+
+#linkedin {
+  fill: #0077b5;
+}
+
+#github {
+  fill: purple;
+}
+
+.socials-icons:hover {
+  animation-name: fadeOff;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOff {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.6;
+  }
+}
