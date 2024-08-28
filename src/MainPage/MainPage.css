@@ -30,8 +30,11 @@
 }
 
 .socials-icons {
-  padding-left: 10%;
+  margin-left: 10%;
   margin-top: 7vh;
+  height: 1em;
+  width: 1em;
+  transition: all 0.7s ease;
 }
 
 #linkedin {
@@ -43,16 +46,37 @@
 }
 
 .socials-icons:hover {
-  animation-name: fadeOff;
+  animation-name: animHover;
   animation-duration: 0.7s;
   animation-fill-mode: forwards;
 }
 
-@keyframes fadeOff {
+.socials-icons:not(:hover) {
+  animation: animHoverOut 0.7s ease forwards;
+}
+
+@keyframes animHover {
   from {
     opacity: 1;
+    height: 1em;
+    width: 1em;
   }
   to {
     opacity: 0.6;
+    height: 1.2em;
+    width: 1.2em;
+  }
+}
+
+@keyframes animHoverOut {
+  from {
+    opacity: 0.6;
+    height: 1.2em;
+    width: 1.2em;
+  }
+  to {
+    opacity: 1;
+    height: 1em;
+    width: 1em;
   }
 }
