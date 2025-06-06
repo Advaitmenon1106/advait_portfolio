@@ -9,6 +9,9 @@ a {
   max-height: 15vh;
   background-color: white;
   box-shadow: 0 2px 2px 0 silver;
+  top: 0;
+  z-index: 100;
+  position: sticky;
 }
 
 #ribbon-all-options {
@@ -21,7 +24,7 @@ a {
   color: rgb(67, 67, 67);
   margin: 1.5em;
   border-bottom: 0;
-  font-size: 1.2em;
+  font-size: 1.2vmax;
   font-family: "Ubuntu";
   font-weight: 500;
 }
