@@ -4,6 +4,10 @@
 #about-me {
   display: flex;
   margin-top: 10vh;
+  opacity: 0;
+  animation-name: pageLoad_fade_in;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 #hero-text {
@@ -78,5 +82,11 @@
     opacity: 1;
     height: 1em;
     width: 1em;
+  }
+}
+
+@keyframes pageLoad_fade_in {
+  to {
+      opacity: 1;
   }
 }
